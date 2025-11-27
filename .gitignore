@@ -1,0 +1,21 @@
+# Sistema
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints
+
+# Ambiente virtual
+venv/
+
+# Dados e outputs (NUNCA versionar)
+data/
+Phase0_Phase2/
+Phase4/
+results.txt
+model/
+results/
+mlruns/
+
+# Outros temporários
+*.log

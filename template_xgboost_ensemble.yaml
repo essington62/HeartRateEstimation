@@ -1,0 +1,29 @@
+base_path: "/Users/edmundobrown/Documents/MLGeral/AI-HealthCare/HREstimation"
+
+folders:
+  - "results.txt"
+  - "assessment"
+  
+  - "data/raw"
+
+  - "Phase0_Phase2/data/processed"
+  - "Phase0_Phase2/data/split"
+  - "Phase0_Phase2/model/round_01"
+  - "Phase0_Phase2/results/round_01"
+  - "Phase0_Phase2/notebooks"
+  - "Phase0_Phase2/eda"
+
+  - "Phase4/data/processed"
+  - "Phase4/data/split"
+  - "Phase4/model/round_01"
+  - "Phase4/results/round_01"
+  - "Phase4/notebooks"
+  - "Phase4/eda"
+
+  - "Ensemble/data/processed"
+  - "Ensemble/data/split"
+  - "Ensemble/model/round_01"
+  - "Ensemble/results/round_01"
+  - "Ensemble/notebooks"
+
+  - "scripts"

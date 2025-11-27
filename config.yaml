@@ -1,0 +1,45 @@
+project:
+  name: "HeartRateEstimation"
+  version: "0.1"
+  description: "Pipeline de ML para estimar frequência cardíaca via sinais PPG/IMU."
+
+paths:
+  base: "/Users/edmundobrown/Documents/MLGeral/AI-HealthCare/HRESTIMATION"
+  raw: "data/raw"
+  processed: "data/processed"
+  split: "data/split"
+  results: "results"
+  models: "model"
+
+phase:
+  active_phase: "Phase0_Phase2"
+  # opções: Phase0_Phase2, Phase4, Ensemble
+
+round:
+  current_round: "round_01"   # round que está sendo executado agora
+  save_best_model: true
+
+data:
+  input_format: "csv"
+  shuffle: true
+  seed: 42
+
+model:
+  type: "xgboost"
+  params:
+    learning_rate: 0.1
+    n_estimators: 500
+    max_depth: 6
+    subsample: 0.9
+    colsample_bytree: 0.9
+    objective: "reg:squarederror"
+
+training:
+  test_size: 0.2
+  validation_size: 0.2
+  metric: "rmse"
+
+mlflow:
+  enabled: true
+  tracking_uri: "mlruns"
+  experiment_name: "HeartRateEstimation"
