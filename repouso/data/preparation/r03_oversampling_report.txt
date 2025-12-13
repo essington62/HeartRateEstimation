@@ -1,0 +1,35 @@
+======================================================================
+INTELLIGENT OVERSAMPLING REPORT — ROUND_03
+======================================================================
+
+Round: round_03
+Prefix: r03
+Timestamp: 2025-12-13 10:55:09.619574
+
+INITIAL DATASET:
+- Samples: 792
+
+BASE OVERSAMPLING:
+- 84–95 BPM: x2
+- 95–106 BPM: x10
+- 106–117 BPM: x10
+
+EXTREME HR REFINEMENT:
+- Threshold : hr_true > 115.5
+- Multiplier: x10
+- Extreme samples (orig): 14
+
+IMPORTANT FEATURES:
+fusion_ppg_imu, ppg_f_dom, phase_id, imu_entropy, imu_p95, imu_mean, imu_energy, acc_rms, hr_cand_weighted, ppg_bp_high
+
+FINAL DATASET:
+- Samples: 1574
+
+TRAIN HR DISTRIBUTION:
+hr_true
+(83.6, 94.385]        295
+(94.385, 105.17]      288
+(72.815, 83.6]        256
+(61.965, 72.815]      174
+(115.955, 126.741]    124
+(105.17, 115.955]     122

@@ -1,0 +1,25 @@
+======================================================================
+BAYESIAN OPTIMIZATION REPORT — REPOUSO
+======================================================================
+
+Round      : round_04
+Model      : r04_xgboost_bayesian_refinement
+Timestamp  : 2025-12-13 11:33:06.139529
+Trials     : 40
+
+BEST METRICS
+------------------------------
+MAE  : 2.0907
+Corr : 0.9760
+
+BEST PARAMETERS
+------------------------------
+n_estimators: 437
+learning_rate: 0.03131704699699944
+max_depth: 8
+min_child_weight: 2.797902463027109
+subsample: 0.9076917159874688
+colsample_bytree: 0.7007692990514951
+gamma: 0.24740913683859356
+reg_alpha: 0.5850549869029064
+reg_lambda: 0.9054869160845842

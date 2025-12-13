@@ -1,0 +1,33 @@
+======================================================================
+INTELLIGENT OVERSAMPLING REPORT
+======================================================================
+
+Round: round_02
+Prefix: r2
+Timestamp: 2025-12-13 08:25:06.433405
+
+INITIAL VOLUME:
+- Samples: 792
+
+OVERSAMPLING CRITERIA:
+- 84–95 BPM: x2
+- 95–106 BPM: x10
+- 106–117 BPM: x10
+
+Important features:
+fusion_ppg_imu, ppg_f_dom, phase_id, imu_entropy, imu_p95, imu_mean, imu_energy, acc_rms, hr_cand_weighted, ppg_bp_high
+
+FINAL VOLUME:
+- Samples: 1434
+
+COMMENTARY:
+Intelligent oversampling applied in feature space to support round_02, using interpolation + jitter on high-importance features. Objective: densify rare HR regions with physiological realism.
+
+HR DISTRIBUTION (TRAIN):
+hr_true
+(94.385, 105.17]      293
+(83.6, 94.385]        286
+(72.815, 83.6]        265
+(61.965, 72.815]      179
+(105.17, 115.955]     111
+(115.955, 126.741]     13

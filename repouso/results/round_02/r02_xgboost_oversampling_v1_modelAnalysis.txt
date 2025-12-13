@@ -1,0 +1,78 @@
+======================================================================
+MODEL ANALYSIS REPORT
+======================================================================
+
+Round      : round_02
+Model      : r02_xgboost_oversampling_v1
+Timestamp  : 2025-12-13 09:11:49.155514
+
+PERFORMANCE METRICS
+------------------------------
+MAE  : 2.6796
+RMSE : 4.9174
+R2   : 0.8583
+Corr : 0.9269
+
+LEAKAGE CHECK
+------------------------------
+✅ No identical rows between train and test
+✅ Test set has no duplicates
+
+TOP PERMUTATION IMPORTANCE
+------------------------------
+              feature  importance_mean  importance_std
+25           phase_id         2.710757        0.278739
+14          ppg_f_dom         2.179063        0.134526
+23     fusion_ppg_imu         1.672557        0.148399
+21        imu_entropy         1.607685        0.162577
+0            ppg_mean         0.825350        0.081936
+12        ppg_bp_high         0.660708        0.106703
+28   hr_cand_weighted         0.512955        0.053308
+6             imu_std         0.443653        0.059975
+16        imu_bp_high         0.378622        0.027872
+4           ppg_range         0.374639        0.029981
+19  coherence_ppg_imu         0.322198        0.052014
+15         imu_bp_low         0.321683        0.060209
+1             ppg_std         0.275307        0.023831
+7             imu_p95         0.274856        0.042429
+27      motion_weight         0.241326        0.034637
+11          ppg_bp_hr         0.223866        0.030065
+3             ppg_max         0.183131        0.036293
+24       hr_candidate         0.179570        0.023770
+8          imu_energy         0.176144        0.019724
+2             ppg_min         0.164574        0.038138
+
+TOP NATIVE IMPORTANCE
+------------------------------
+              feature  importance
+23     fusion_ppg_imu    0.244680
+25           phase_id    0.151931
+31              phase    0.077520
+14          ppg_f_dom    0.071758
+21        imu_entropy    0.058770
+24       hr_candidate    0.044891
+6             imu_std    0.039275
+28   hr_cand_weighted    0.034011
+27      motion_weight    0.030187
+15         imu_bp_low    0.025279
+16        imu_bp_high    0.020437
+12        ppg_bp_high    0.018929
+7             imu_p95    0.018434
+9             acc_rms    0.016123
+4           ppg_range    0.012763
+0            ppg_mean    0.012710
+3             ppg_max    0.012586
+2             ppg_min    0.012530
+29      ppg_hr_smooth    0.011637
+19  coherence_ppg_imu    0.010906
+
+ERROR BY HR RANGE
+------------------------------
+                        mean       std  count
+hr_bin                                       
+(64.469, 74.983]    3.652798  3.809230     48
+(74.983, 82.217]    2.975326  2.711532     48
+(82.217, 87.977]    2.807399  2.723720     48
+(87.977, 97.472]    2.287185  2.992439     50
+(97.472, 101.947]   1.173749  2.006670     47
+(101.947, 125.759]  3.187569  7.749340     46
