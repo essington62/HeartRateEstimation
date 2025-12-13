@@ -1,75 +1,75 @@
 # Heart Rate Estimation — Governed ML Pipeline
 
-Projeto de **Estimativa de Frequência Cardíaca (HR)** a partir de sinais **PPG + IMU**, 
-com foco em **robustez sob movimento**, **governança experimental** e **reprodutibilidade**.
+A **Heart Rate (HR) Estimation** project based on **PPG + IMU** signals, with a strong focus on  
+**robustness under motion**, **experimental governance**, and **reproducibility**.
 
-O projeto foi desenvolvido com uma abordagem iterativa por *rounds*, mantendo histórico completo
-de decisões, resultados, ajustes e aprendizados ao longo do tempo.
-
----
-
-## 🎯 Objetivos do Projeto
-
-- Estimar HR em diferentes domínios fisiológicos:
-  - **Repouso / Atividade Leve (Phases 0 e 2)**
-  - **Exercício / Esforço Intenso (Phase 4)**
-- Reduzir erro médio absoluto (MAE) de forma **controlada e explicável**
-- Construir modelos **especialistas por domínio**
-- Preparar a base para um **Ensemble Governado**
-- Garantir **rastreabilidade completa** do processo experimental
+The project is developed using an iterative, *round-based* approach, preserving a complete history
+of decisions, results, adjustments, and lessons learned over time.
 
 ---
 
-## 🧠 Princípios-Chave
+## 🎯 Project Objectives
 
-### ✔ Governança desde o início
-- Nenhum dado, modelo treinado ou resultado é versionado
-- Todo experimento gera:
-  - artefatos nomeados por *round*
-  - relatórios `.txt` com métricas, erros e decisões
-- Histórico completo preservado localmente
-
-### ✔ Notebooks parametrizados
-- Notebooks reutilizáveis
-- Parâmetros explícitos (round, prefixos, caminhos)
-- Fácil reexecução e comparação entre versões
-
-### ✔ Base de Conhecimento Viva (NotebookLM)
-- Relatórios, métricas, análises e decisões consolidados
-- Capacidade de:
-  - cruzar rounds
-  - identificar falhas críticas
-  - justificar decisões técnicas
-- Funciona como **memória do projeto**, não apenas documentação estática
+- Estimate HR across different physiological domains:
+  - **Rest / Light Activity (Phases 0 and 2)**
+  - **Exercise / High Effort (Phase 4)**
+- Reduce Mean Absolute Error (MAE) in a **controlled and explainable** manner
+- Build **domain-specialist models**
+- Prepare the foundation for a **Governed Ensemble**
+- Ensure **full traceability** of the experimental process
 
 ---
 
-## 🗂 Estrutura do Repositório
+## 🧠 Core Principles
+
+### ✔ Governance from Day One
+- No data, trained model, or result is overwritten
+- Every experiment produces:
+  - artifacts named by *round*
+  - `.txt` reports with metrics, errors, and decisions
+- Complete history preserved locally
+
+### ✔ Parameterized Notebooks
+- Reusable notebooks
+- Explicit parameters (round, prefixes, paths)
+- Easy re-execution and comparison across versions
+
+### ✔ Living Knowledge Base (NotebookLM)
+- Consolidation of reports, metrics, analyses, and decisions
+- Ability to:
+  - compare rounds
+  - identify critical failures
+  - justify technical decisions
+- Acts as the **project’s memory**, not just static documentation
+
+---
+
+## 🗂 Repository Structure
 
 ```text
 HeartRateEstimation/
-├── assessment/          # Auditorias iniciais e exploração do dataset
+├── assessment/          # Initial audits and dataset exploration
 │   └── assessment.ipynb
 │
-├── repouso/             # Pipeline completo para HR em repouso
+├── rest/                # Full pipeline for HR at rest
 │   ├── config/
 │   ├── eda/
 │   ├── notebooks/
 │   ├── utils/
 │   └── README.md
 │
-├── exercicio/           # Pipeline para HR sob exercício intenso
+├── exercise/            # Pipeline for HR under intense exercise
 │   ├── config/
 │   ├── eda/
 │   ├── notebooks/
 │   ├── utils/
 │   └── README.md
 │
-├── Ensemble/            # Estratégia de combinação de modelos especialistas
+├── Ensemble/            # Strategy for combining specialist models
 │   ├── notebooks/
 │   └── utils/
 │
-├── utils/               # Funções utilitárias compartilhadas
+├── utils/               # Shared utility functions
 │   └── __init__.py
 │
 ├── .gitignore

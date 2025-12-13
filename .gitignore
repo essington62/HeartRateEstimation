@@ -1,0 +1,26 @@
+# Sistema
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Ambientes
+venv/
+.env/
+.conda/
+
+# Dados e outputs (NUNCA versionar)
+data/
+repouso/data/
+repouso/model/
+repouso/results/
+results/
+mlruns/
+
+# Notebooks temporários / cache
+*.log
+
+# YAMLs (não usados no projeto)
+*.yaml
+*.yml
