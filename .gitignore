@@ -23,4 +23,10 @@ mlruns/
 
 # YAMLs (não usados no projeto)
 *.yaml
-*.yml
+*.yml.DS_Store
+**/.DS_Store
+exercicio/diagnostics/
+exercicio/eda/
+exercicio/models/
+exercicio/notebooks/
+exercicio/predictions/

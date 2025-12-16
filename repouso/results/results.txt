@@ -15,3 +15,4 @@ timestamp	model	round	type	train_samples	test_samples	train_phase_counts	test_ph
 20251213_105709	r03_xgboost_extreme_hr_refinement	round_03	train	1259	315	Round_03 | Extreme HR refinement (>115.5 BPM) | Targeted oversampling x20 on real samples (feature-space)	MAE=2.2683,RMSE=3.5781,R2=0.9456,Corr=0.9728	r03_xgboost_extreme_hr_refinement.json	r03_xgboost_extreme_hr_refinement_preds.txt
 20251213_110615	r03_xgboost_extreme_hr_refinement	round_03	analysis	1259	315	model_analysis	MAE=2.2683,RMSE=3.5781,R2=0.9456,Corr=0.9728	r03_xgboost_extreme_hr_refinement_modelAnalysis.txt	-
 20251213_112942	r03_xgboost_extreme_hr_refinement	round_03	train	1259	315	Round_03 | Extreme HR refinement (>115.5 BPM) | Targeted oversampling x20 on real samples (feature-space)	MAE=2.2683,RMSE=3.5781,R2=0.9456,Corr=0.9728	r03_xgboost_extreme_hr_refinement.json	r03_xgboost_extreme_hr_refinement_preds.txt
+round_01	PHASE4_SPLIT	633	159	Baseline split — no balancing
